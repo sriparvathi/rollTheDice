@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(39, 38, 33);
+}
+body{
+    background-color: rgba(231, 204, 204, 0.943);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+h1{
+    background-color:black;
+    color: rgb(141, 187, 149);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+
+}
+.header{
+    background-color: rgb(157, 147, 187);
+    margin: 5px 20px 0px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    
+}
+.main{
+    background-color: blanchedalmond;
+    margin:0px 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    box-shadow: 2px 6px 18px 3px black;
+    flex: 2;
+  
+}
+.lower{
+    background-color: rgb(161, 112, 112);
+    margin:0px 20px;
+    padding: 20px;
+    flex: 1;
+}
+.footer{
+    background-color: antiquewhite;
+    margin: 0px 20px 5px 20px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    
+
+}
+button{
+    background-color: rgb(137, 142, 140);
+    border: none;
+    color: white;
+    border-radius: 12px;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    box-shadow: 2px 6px 18px 3px black;
+    
+}
+.active{
+    box-shadow: -2px 6px 18px 3px black; 
+ }
+ #resetbtn{
+    background-color: crimson;
+   
+}
+#rollbtn{
+    background-color: chocolate;
+    box-shadow: 2px 6px 18px 3px black;
+   
+}
+.dice{
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(176, 181, 190);
+    margin:0 auto;
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    
+    
+}
+.player1{
+    border: none;
+    padding: 100px;
+    background-color: rgb(183, 216, 205);
+    box-shadow: 2px 6px 18px 3px black;
+    
+    
+}
+.player2{
+    border: none;
+    padding: 100px;
+    background-color: rgb(183, 216, 205);
+    box-shadow: 2px 6px 18px 3px black;
+}
+/*img{
+    border-radius: 6px;
+    width: 100px;
+    height: 100px;
+}*/

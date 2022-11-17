@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiceGame</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src = "script.js"></script>
+</head>
+<body>
+    <!--<div class = "container">-->
+    <div class = "header">
+        <h1 id = "message">ROLL THE DICE!</h1>
+        <!--<img src="/dice1.png" alt="dice"></img>-->
+    </div>
+
+    <div class = "main">
+
+        <div class = "player1">
+            <h1 class = "info1">Player1</h1>
+            <h2 class = "name1">Name : <input type = "text" id = "name1"></h2>
+            <h2 class = "age1">Age : <input type = "number" id = "age"></h2>
+            <h2><em>score</em> :<span id = "player1Scoreboard"> 0 </span></h2>
+            <div id ="player1Dice" class = "dice">-</div>
+        </div>
+        <div class = "button">
+            <button id = "rollbtn">Roll Dice</button>
+        </div>
+        <div class="player2">
+            <h1 class = "info1">Player2</h1>
+            <h2 class = "name2">Name : <input type = "text" id = "name2"></h2>
+            <h2 class = "age2">Age : <input type = "number" id = "age"></h2>
+            <h2><em>score</em> :<span id = "player2Scoreboard"> 0 </span></h2>
+            <div id = "player2Dice" class="dice">-</div>
+        </div>
+    </div>
+    <div class = "lower">
+        <button id = "round1">Round 1</button>
+        <button id = "round2">Round 2</button>
+        <button id = "round3">Round 3</button>
+    </div>
+
+    <div class = "footer">   
+        <button id = "resetbtn">Reset Game</button>
+    </div>
+<!--</div>-->   
+</body>
+</html>
