@@ -39,19 +39,8 @@ player2.addEventListener("change", function(){
 
 })
 
-
-
-// use the EventListeners to roll dice button and log out a random number between 1-6.
-// use Math.floor and Math.random fuction.
-// function gameRound(){
-
-// }
-
-
-
-
 rollbtn.addEventListener("click", rollDice);   
-
+round1btn.addEventListener("click", rollDice);
 
 function rollDice(){
     const randomNumber = Math.floor(Math.random() * 6);
@@ -101,7 +90,7 @@ resetbtn.addEventListener("click", reset);
     
 function reset() {
     //window.location.reload(false);
-    message.textContent = "player 1 turn";
+    message.textContent = " ROLL THE DICE! ";
     player1Scoreboard.textContent = 0;
     player2Scoreboard.textContent = 0;
     player1Dice.textContent = '-';
@@ -113,9 +102,7 @@ function reset() {
     player2Dice.classList.remove("active");
     player1Dice.classList.add("active");
 }
-round1btn.addEventListener("click", function () {
-    reset();
-})
+
 round2btn.addEventListener("click", function () {
     reset();
 });
