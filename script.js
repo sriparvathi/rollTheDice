@@ -1,14 +1,4 @@
 //create variable for the game state
-// create object game state
-// add player2Turn as well
-// new button play next round
-//update to round score.
-// take input from players and update.
-// multiple rounds of game.
-// game rounds 5-rounds, highest scorer is the winner.
-// insert a scoreboard table that displays score of each round.
-// after every round check for the interest of the player by clicking on next round.
-// each round game rules may vary
 let player1Score = 0;
 let player2Score = 0;
 let player1Turn = true;
@@ -85,7 +75,7 @@ function rollDice(){
 }
    
 
-// now when the game end, it should start again.
+//when the game end, it should start again.
 resetbtn.addEventListener("click", reset);
     
 function reset() {
