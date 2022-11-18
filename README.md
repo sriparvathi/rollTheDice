@@ -1,14 +1,17 @@
 # rollTheDice
-![pages2](https://user-images.githubusercontent.com/105339225/202557120-3912239b-8738-4828-b512-c1b84118dab5.png)
+![rollTheDice](https://user-images.githubusercontent.com/105339225/202781381-d0303e09-ba72-4dd3-8316-a5af567286f4.png)
+
 ## Game Mechanics
 1. Two Players (Player1 vs Player2).
 2. Players names and age is taken and displayed on the page.
 3. Players will take the turns to roll dice.
-4. Message displays the current status of the game.
+4. Message displays the current status of the game like which player is rolling the dice, who has won the game round.
 5. Each player dice is displayed with the result number.
 6. Scoreboard is updated with score every time.
-7. player who reaches to target score wins the game.
-8. resetGame will set everything back to the start position to continue playing.
+7. player who reaches to target score of 20 wins the game round.
+8. In Round 2 each player plays with the 2 dices and the target score is 50.
+9. In Round 3 each player plays with the 3 dices and the target score is 100.
+10. resetGame will set everything back to the start position to continue playing.
 
 
 ## Installation Instructions
