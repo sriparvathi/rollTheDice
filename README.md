@@ -10,8 +10,10 @@
 6. Scoreboard is updated with score every time.
 7. player who reaches to target score of 20 wins the game round.
 8. In Round 2 each player plays with the 2 dices and the target score is 50.
-9. In Round 3 each player plays with the 3 dices and the target score is 100.
-10. resetGame will set everything back to the start position to continue playing.
+9. Click on round 2 button to play the second round.
+10. In Round 3 each player plays with the 3 dices and the target score is 100.
+11. Click on round 3 button to play the third round.
+12. resetGame will set everything back to the start position to continue playing.
 
 
 ## Installation Instructions
