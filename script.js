@@ -15,71 +15,69 @@ const player2Scoreboard = document.getElementById("player2Scoreboard");
 const message = document.getElementById("message");
 const rollbtn = document.getElementById("rollbtn");
 const resetbtn = document.getElementById("resetbtn");
-//const round1btn = document.getElementById("round1");
 const round2btn = document.getElementById("round2");
 const round3btn = document.getElementById("round3");
 const player1 = document.getElementById("name1");
 const player2 = document.getElementById("name2");
-player1.addEventListener("change", function(){
+player1.addEventListener("change", function () {
     player1Value = player1.value;
 
 })
-player2.addEventListener("change", function(){
+player2.addEventListener("change", function () {
     player2Value = player2.value;
 
 })
 
-rollbtn.addEventListener("click", rollDice);   
+rollbtn.addEventListener("click", rollDice);
 
 
-function rollDice(){
-    const randomNumber = Math.floor(Math.random() * 6)+1;
-        if (player1Turn) {
-            
-            player1Score += randomNumber;
-            player1Scoreboard.textContent = player1Score;
-            player1Dice.textContent = randomNumber;
-            player1Dice.classList.remove("active");
-            player2Dice.classList.add("active");
-            message.textContent = (`Now ${player1Value} Turn`);
+function rollDice() {
+    const randomNumber = Math.floor(Math.random() * 6) + 1;
+    if (player1Turn) {
 
-        } else {
-            player2Score += randomNumber;
-            player2Scoreboard.textContent = player2Score;
-            player2Dice.textContent = randomNumber;
-            player2Dice.classList.remove("active");
-            player1Dice.classList.add("active");
-            message.textContent = (`Now ${player2Value} Turn`);
-           
-        }
-    
-        function showDisplay() {
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
+        player1Score += randomNumber;
+        player1Scoreboard.textContent = player1Score;
+        player1Dice.textContent = randomNumber;
+        player1Dice.classList.remove("active");
+        player2Dice.classList.add("active");
+        message.textContent = (`Now ${player1Value} Turn`);
 
-        }
-        if (player1Score >= 20) {
-            message.textContent = (`Player ${player1Value} has won!`);
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
-            showDisplay();
-        } else if (player2Score >= 20) {
-            message.textContent = (`Player ${player1Value} has won!`);
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
-            showDisplay();
-        }
+    } else {
+        player2Score += randomNumber;
+        player2Scoreboard.textContent = player2Score;
+        player2Dice.textContent = randomNumber;
+        player2Dice.classList.remove("active");
+        player1Dice.classList.add("active");
+        message.textContent = (`Now ${player2Value} Turn`);
 
-        player1Turn = !player1Turn; 
+    }
+
+    function showDisplay() {
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+
+    }
+    if (player1Score >= 20) {
+        message.textContent = (`Player ${player1Value} has won!`);
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+        showDisplay();
+    } else if (player2Score >= 20) {
+        message.textContent = (`Player ${player1Value} has won!`);
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+        showDisplay();
+    }
+
+    player1Turn = !player1Turn;
 
 }
-   
+
 
 //when the game end, it should start again.
 resetbtn.addEventListener("click", reset);
-    
+
 function reset() {
-    //window.location.reload(false);
     message.textContent = " ROLL THE DICE! ";
     player1Scoreboard.textContent = 0;
     player2Scoreboard.textContent = 0;
@@ -92,95 +90,97 @@ function reset() {
     player2Dice.classList.remove("active");
     player1Dice.classList.add("active");
 }
-// round1btn.addEventListener("click", rollDice);
+
 round2btn.addEventListener("click", rollDice2);
-function rollDice2(){
-    const randomNumber2 = Math.floor(Math.random() * 12)+1;
-        if (player1Turn) {
-            
-            player1Score += randomNumber2;
-            player1Scoreboard.textContent = player1Score;
-            player1Dice.textContent = randomNumber2;
-            player1Dice.classList.remove("active");
-            player2Dice.classList.add("active");
-            message.textContent = (`Now ${player1Value} Turn`);
+function rollDice2() {
+    const randomNumber2 = Math.floor(Math.random() * 12) + 1;
+    if (player1Turn) {
 
-        } else {
-            player2Score += randomNumber2;
-            player2Scoreboard.textContent = player2Score;
-            player2Dice.textContent = randomNumber2;
-            player2Dice.classList.remove("active");
-            player1Dice.classList.add("active");
-            message.textContent = (`Now ${player2Value} Turn`);
-           
-        }
-    
-        function showDisplay() {
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
+        player1Score += randomNumber2;
+        player1Scoreboard.textContent = player1Score;
+        player1Dice.textContent = randomNumber2;
+        player1Dice.classList.remove("active");
+        player2Dice.classList.add("active");
+        message.textContent = (`Now ${player1Value} Turn`);
 
-        }
-        if (player1Score >= 50) {
-            message.textContent = (`Player ${player1Value} has won!`);
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
-            showDisplay();
-        } else if (player2Score >= 50) {
-            message.textContent = (`Player ${player1Value} has won!`);
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
-            showDisplay();
-        }
+    } else {
+        player2Score += randomNumber2;
+        player2Scoreboard.textContent = player2Score;
+        player2Dice.textContent = randomNumber2;
+        player2Dice.classList.remove("active");
+        player1Dice.classList.add("active");
+        message.textContent = (`Now ${player2Value} Turn`);
 
-        player1Turn = !player1Turn; 
+    }
+
+    function showDisplay() {
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+
+    }
+    if (player1Score >= 50) {
+        message.textContent = (`Player ${player1Value} has won!`);
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+        showDisplay();
+    } else if (player2Score >= 50) {
+        message.textContent = (`Player ${player1Value} has won!`);
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+        showDisplay();
+    }
+
+    player1Turn = !player1Turn;
 
 }
+reset();
+
 
 round3btn.addEventListener("click", rollDice3);
-function rollDice3(){
-    const randomNumber3 = Math.floor(Math.random() * 18)+1;
-        if (player1Turn) {
-            
-            player1Score += randomNumber3;
-            player1Scoreboard.textContent = player1Score;
-            player1Dice.textContent = randomNumber3;
-            player1Dice.classList.remove("active");
-            player2Dice.classList.add("active");
-            message.textContent = (`Now ${player1Value} Turn`);
+function rollDice3() {
+    const randomNumber3 = Math.floor(Math.random() * 18) + 1;
+    if (player1Turn) {
 
-        } else {
-            player2Score += randomNumber3;
-            player2Scoreboard.textContent = player2Score;
-            player2Dice.textContent = randomNumber3;
-            player2Dice.classList.remove("active");
-            player1Dice.classList.add("active");
-            message.textContent = (`Now ${player2Value} Turn`);
-           
-        }
-    
-        function showDisplay() {
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
+        player1Score += randomNumber3;
+        player1Scoreboard.textContent = player1Score;
+        player1Dice.textContent = randomNumber3;
+        player1Dice.classList.remove("active");
+        player2Dice.classList.add("active");
+        message.textContent = (`Now ${player1Value} Turn`);
 
-        }
-        if (player1Score >= 100) {
-            message.textContent = (`Player ${player1Value} has won!`);
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
-            showDisplay();
-        } else if (player2Score >= 100) {
-            message.textContent = (`Player ${player1Value} has won!`);
-            rollbtn.style.display = "none";
-            resetbtn.style.display = "block";
-            showDisplay();
-        }
+    } else {
+        player2Score += randomNumber3;
+        player2Scoreboard.textContent = player2Score;
+        player2Dice.textContent = randomNumber3;
+        player2Dice.classList.remove("active");
+        player1Dice.classList.add("active");
+        message.textContent = (`Now ${player2Value} Turn`);
 
-        player1Turn = !player1Turn; 
+    }
+
+    function showDisplay() {
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+
+    }
+    if (player1Score >= 100) {
+        message.textContent = (`Player ${player1Value} has won!`);
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+        showDisplay();
+    } else if (player2Score >= 100) {
+        message.textContent = (`Player ${player1Value} has won!`);
+        rollbtn.style.display = "none";
+        resetbtn.style.display = "block";
+        showDisplay();
+    }
+
+    player1Turn = !player1Turn;
 
 }
-    
+reset();
 
-    
+
 
 
 
