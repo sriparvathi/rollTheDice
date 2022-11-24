@@ -28,7 +28,9 @@ Step 2: Using VSCode, launch the index.html with the Live Server extension.
 
 ![pages1](https://user-images.githubusercontent.com/105339225/202557077-4e2e2140-228f-47c0-a9bd-dae876a736ab.png)
 
-[Link to the GitHub page ](https://github.com/sriparvathi/rollTheDice/settings/pages)
+## Game Live site
+
+https://github.com/sriparvathi/rollTheDice/settings/pages
 
 
 ## Technologies
