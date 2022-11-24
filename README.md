@@ -30,8 +30,7 @@ Step 2: Using VSCode, launch the index.html with the Live Server extension.
 
 ## Game Live site
 
-https://github.com/sriparvathi/rollTheDice/settings/pages
-
+https://sriparvathi.github.io/rollTheDice/
 
 ## Technologies
 - HTML
